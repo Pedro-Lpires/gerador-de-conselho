@@ -1,0 +1,80 @@
+ 
+body {
+    font-family: "Manrope", sans-serif;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    background-color: hsl(218, 23%, 16%);
+}
+
+main > div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    padding: 40px 24px 64px;
+    border-radius: 12px;
+    background-color: hsl(217, 19%, 38%);
+    text-align: center;
+}
+
+.numero {
+    margin-bottom: 24px;
+    color: hsl(150, 100%, 66%);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 4px;
+}
+
+.mensagem {
+    margin: 0 0 28px;
+    color: hsl(193, 38%, 86%);
+    font-size: 28px;
+    font-weight: 800;
+    line-height: 1.4;
+}
+
+.icone {
+    display: block;
+    width: 100%;
+}
+
+.icone img {
+    display: block;
+    width: 100%;
+}
+
+.dado {
+    position: absolute;
+    bottom: -32px;
+    display: grid;
+    width: 64px;
+    height: 64px;
+    place-items: center;
+    border: 0;
+    border-radius: 50%;
+    background-color: hsl(150, 100%, 66%);
+    cursor: pointer;
+}
+
+.dado img {
+    width: 24px;
+    height: 24px;
+}
+
+.dado:hover {
+    box-shadow: 0 0 32px hsl(150, 100%, 66%);
+}
+
+@media (max-width: 480px) {
+    .mensagem {
+        font-size: 24px;
+    }
+}
